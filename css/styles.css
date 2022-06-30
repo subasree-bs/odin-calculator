@@ -1,0 +1,44 @@
+body{
+    background-color: #c6ffc4 !important;
+}
+.calc{
+    height:435px;
+    width: 340px;
+    background-color: #7d8080;
+    margin: 0 auto !important;
+    margin-top: 100px !important;
+    padding: 5px;
+}
+.display{
+    background-color: #b1afae;
+    height: 100px;
+    /* margin-bottom: 7px; */
+}
+.btns{
+    padding: 12px 34px;  
+    background-color: aquamarine;
+    background-image: linear-gradient(to bottom left, #1a25bd , #351c5c);
+    color: white;
+    font-weight: bold;
+}
+.btnac{
+    padding: 12px 70px;
+}
+.btnadd{
+    padding: 12px 32px !important;
+}
+
+.btndot{
+    padding: 12px 37px !important;
+    background-image: linear-gradient(to bottom right, #0081a8, #009657);
+}
+.btnequal{
+    padding: 12px 73px;
+    background-image: linear-gradient(to bottom , #ff0000, #fcf700);
+}
+.buttons{
+    padding:11px !important;
+}
+.btnop{
+    background-image: linear-gradient(to bottom right, #00c3ff, #51fab4) !important;
+}
