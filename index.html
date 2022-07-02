@@ -14,81 +14,99 @@
 </head>
 <body>
     <div class="calc" style="text-align: center !important;">
-        <h3 style="padding-left:5px;">CALCULATOR</h3>
-        <div class="display" id="display">
+        <h3>CALCULATOR</h3>
+        <input type="text" class="display" id="display" placeholder="0" >
             <!-- <input type="text" name="d_num" id="d_num"> -->
-            <div class="txt" id="txt">
-            </div>
+            <!-- <div class="txt" id="txt">
+            </div> -->
 
-        </div>
+        
         <div class="buttons">
-            <div class="row" style="text-align: center;">
+
+            <button class="btns btnac" onclick= "ac()">AC</button>
+            <button class="btns clear" onclick= "c()">C</button>
+            <button class="btns btnop btndiv" value="/" onclick= "myfunction('/')">/</button>
+            <button class="btns btnum" value="7" onclick= "myfunction(7)">7</button>
+            <button class="btns btnum" value="8" onclick= "myfunction(8)">8</button>
+            <button class="btns btnum" value="9" onclick= "myfunction(9)">9</button>
+            <button class="btns btnop btnmul" value="*" onclick= "myfunction('*')">* </button>
+            <button class="btns btnum" value="4" onclick= "myfunction(4)">4</button>
+            <button class="btns btnum" value="5" onclick= "myfunction(5)">5</button>
+            <button class="btns btnum" value="6" onclick= "myfunction(6)">6</button>
+            <button class="btns btnop btnsub" value="-" onclick= "myfunction('-')">-</button>
+            <button class="btns btnum" value="1" onclick= "myfunction(1)">1</button>
+            <button class="btns btnum" value="2" onclick= "myfunction(2)">2</button>
+            <button class="btns btnum" value="3" onclick= "myfunction(3)">3</button>
+            <button class="btns btnop btnadd" value="+" onclick= "myfunction('+')">+</button>
+            <button class="btns btnum" value="0" onclick= "myfunction(0)">0</button>
+            <button class="btns btndot" value="." onclick= "myfunction('.')">.</button>
+            <button class="btns btnequal" onclick= "calc()">=</button>
+
+            <!-- <div class="row" style="text-align: center;">
                 <div class="col-6" style="padding:1px !important;">
-                    <button class="btns btnac">AC</button>
+                    <button class="btns btnac" onclick= "ac()">AC</button>
                 </div>
                 <div class="col-3" style="padding:1px !important;">
-                    <button class="btns clear">C</button>
+                    <button class="btns clear" onclick= "c()">C</button>
                 </div>
                 <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnop btndiv">/</button>
-                </div>
-            </div>
-            <div class="row" style="text-align: center;">
-                <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnum" value="7">7</button>
-                </div>
-                <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnum" value="8">8</button>
-                </div>
-                <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnum" value="9">9</button>
-                </div>
-                <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnop btnmul">x</button>
+                    <button class="btns btnop btndiv" onclick= "myfunction('/')">/</button>
                 </div>
             </div>
             <div class="row" style="text-align: center;">
                 <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnum" value="4">4</button>
+                    <button class="btns btnum" value="7" onclick= "myfunction('7')">7</button>
                 </div>
                 <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnum" value="5">5</button>
+                    <button class="btns btnum" value="8" onclick= "myfunction('8')">8</button>
                 </div>
                 <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnum" value="6">6</button>
+                    <button class="btns btnum" value="9" onclick= "myfunction('9')">9</button>
                 </div>
                 <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnop btnsub">-</button>
-                </div>
-            </div>
-            <div class="row" style="text-align: center;">
-                <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnum" value="1">1</button>
-                </div>
-                <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnum" value="2">2</button>
-                </div>
-                <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnum" value="3">3</button>
-                </div>
-                <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnop btnadd">+</button>
+                    <button class="btns btnop btnmul" onclick= "myfunction('*')">* </button>
                 </div>
             </div>
             <div class="row" style="text-align: center;">
                 <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btnum" value="0">0</button>
+                    <button class="btns btnum" value="4" onclick= "myfunction('4')">4</button>
                 </div>
                 <div class="col-3" style="padding:1px !important;">
-                    <button class="btns btndot">.</button>
+                    <button class="btns btnum" value="5" onclick= "myfunction('5')">5</button>
+                </div>
+                <div class="col-3" style="padding:1px !important;">
+                    <button class="btns btnum" value="6" onclick= "myfunction('6')">6</button>
+                </div>
+                <div class="col-3" style="padding:1px !important;">
+                    <button class="btns btnop btnsub" onclick= "myfunction('-')">-</button>
+                </div>
+            </div>
+            <div class="row" style="text-align: center;">
+                <div class="col-3" style="padding:1px !important;">
+                    <button class="btns btnum" value="1" onclick= "myfunction('1')">1</button>
+                </div>
+                <div class="col-3" style="padding:1px !important;">
+                    <button class="btns btnum" value="2" onclick= "myfunction('2')">2</button>
+                </div>
+                <div class="col-3" style="padding:1px !important;">
+                    <button class="btns btnum" value="3" onclick= "myfunction('3')">3</button>
+                </div>
+                <div class="col-3" style="padding:1px !important;">
+                    <button class="btns btnop btnadd" onclick= "myfunction('+')">+</button>
+                </div>
+            </div>
+            <div class="row" style="text-align: center;">
+                <div class="col-3" style="padding:1px !important;">
+                    <button class="btns btnum" value="0" onclick= "myfunction('0')">0</button>
+                </div>
+                <div class="col-3" style="padding:1px !important;">
+                    <button class="btns btndot" onclick= "myfunction('.')">.</button>
                 </div>
                 <div class="col-6" style="padding:1px !important;">
-                    <button class="btns btnequal">=</button>
+                    <button class="btns btnequal" onclick= "calc()">=</button>
+                </div>
+            </div> -->
                 </div>
             </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
