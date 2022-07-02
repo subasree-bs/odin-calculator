@@ -1,18 +1,40 @@
 body{
     background-color: #c6ffc4 !important;
+    background-image: linear-gradient(to bottom , #000000 , #ffffff);
+    height: 100vh;
+    padding-top: 100px !important;
 }
 .calc{
     height:435px;
     width: 340px;
-    background-color: #7d8080;
+    background-color: rgb(167, 190, 84);
     margin: 0 auto !important;
-    margin-top: 100px !important;
+    /* margin-top: 100px !important; */
     padding: 5px;
+    /* background-image: linear-gradient(to bottom left, #59f88e , #fda430); */
+    /* border: 10px dotted blue; */
+}
+h3{
+    font-family: monospace;
+    font-weight: 600 !important;
+    /* color: #00fcc5; */
+    /* background: -webkit-linear-gradient(rgb(248, 16, 16), rgb(252, 236, 9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
 }
 .display{
     background-color: #b1afae;
     height: 100px;
-    /* margin-bottom: 7px; */
+    width: 100%;
+    text-align: right;
+    font-size: 30px;
+    color: black !important;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    margin-left: 5px;
 }
 .btns{
     padding: 12px 34px;  
@@ -23,6 +45,14 @@ body{
 }
 .btnac{
     padding: 12px 70px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: linear-gradient(to bottom left, #fae955, #f76d2e);
+
+}
+.clear{
+    background-image: linear-gradient(to bottom right, #fae955, #f76d2e);
+
 }
 .btnadd{
     padding: 12px 32px !important;
@@ -34,7 +64,9 @@ body{
 }
 .btnequal{
     padding: 12px 73px;
-    background-image: linear-gradient(to bottom , #ff0000, #fcf700);
+    background-image: linear-gradient(to bottom , #fae955, #fc47fc);
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
 .buttons{
     padding:11px !important;
